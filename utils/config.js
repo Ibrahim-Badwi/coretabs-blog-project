@@ -1,6 +1,4 @@
-/* handling of environment variables */
-require('dotenv').config();
-
+/* environment variables */
 
 const PORT = process.env.PORT;
 const MONGODB_URI = process.env.MONGODB_URI;

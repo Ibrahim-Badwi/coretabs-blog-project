@@ -3,14 +3,18 @@ const mongoose = require('mongoose');
 
 
 // data stored in the database is given a schema at the level of the application
+// schema tells Mongoose how the note objects are to be stored in the database
 const blogSchema = new mongoose.Schema({
-  title: String,
-  meta: Array,
-  imgSrc: String,
+  title: {
+    type: String,
+  },
   content: String,
+  meta: Object,
+  imgsrc: String,
 });
 
 // format the objects returned by Mongoose
+// modify the toJSON method of the schema, which is used on all instances of the models produced with that schema
 blogSchema.set('toJSON', {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString();

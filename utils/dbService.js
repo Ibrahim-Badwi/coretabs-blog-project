@@ -1,11 +1,11 @@
 /* mongodb service */
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 const logger = require('./logger');
 const config = require('./config');
 
 
 // setup for mongodb connection
-function setup() {
+function dbSetup() {
   logger.info('connecting to', config.MONGODB_URI);
 
   mongoose.connect(config.MONGODB_URI, {
@@ -20,4 +20,4 @@ function setup() {
   });
 }
 
-module.exports = setup;
+module.exports = dbSetup;
