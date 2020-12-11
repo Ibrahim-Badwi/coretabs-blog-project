@@ -7,28 +7,28 @@ import PostsBar from './PostsBar';
 import postsService from '../services/posts';
 
 const Content = () => {
-    const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);
 
-    const hook = () => {
-        postsService
-        .getAll()
-        .then(intialPosts => {
-            setPosts(intialPosts)
-        })
-    };
+  const hook = () => {
+    postsService
+      .getAll()
+      .then(initialPosts => {
+        setPosts(initialPosts);
+      });
+  };
 
-    useEffect(hook, []);
+  useEffect(hook, []);
 
-    return (
-        <div className="container-lg mt-5">
-            <Switch>
-                <div className="row">
-                    <PostsGrid posts={posts} />
-                    <PostsBar latest={posts} />
-                </div>
-            </Switch>
+  return (
+    <div className="container-lg mt-5">
+      <Switch>
+        <div className="row">
+          <PostsGrid posts={posts} />
+          <PostsBar latest={posts} />
         </div>
-    );
-}
+      </Switch>
+    </div>
+  );
+};
 
 export default Content;

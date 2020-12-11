@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
   return (
@@ -30,9 +30,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <p className="footer-box copy">build by &copy; <a href="https://twitter.com/Ibrahim_Badwi0" target="_blank" rel="noopener noreferrer">Ibrahim Badwi</a></p>
-        
+
       </div>
     </footer>
   );

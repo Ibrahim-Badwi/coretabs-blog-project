@@ -2,11 +2,11 @@ import React from 'react';
 
 
 const InforBar = () => {
-    return (
-        <div className="info d-none d-md-block">
+  return (
+    <div className="info d-none d-md-block">
             Infor Bar
-        </div>
-    );
-}
+    </div>
+  );
+};
 
 export default InforBar;

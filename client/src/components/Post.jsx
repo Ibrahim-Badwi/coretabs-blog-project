@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faClock, faFolder } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faClock, faFolder } from '@fortawesome/free-solid-svg-icons';
 
-import img from "../assets/library.jpg";
+import img from '../assets/library.jpg';
 
 const Meta = ({ meta }) => {
 
   const formatDate = () => {
     let date = new Date(meta.published);
-    let formatedDate = date.toLocaleDateString('En', {year: 'numeric', month: 'short', day: 'numeric'})
+    let formatedDate = date.toLocaleDateString('En', { year: 'numeric', month: 'short', day: 'numeric' });
 
     return formatedDate;
-  }
+  };
 
-  const margin = { marginRight: "4px" };
+  const margin = { marginRight: '4px' };
 
   return (
     <ul className="post-meta">
@@ -24,11 +24,11 @@ const Meta = ({ meta }) => {
       </li>
       <li className="meta-item">
         <FontAwesomeIcon icon={faFolder} style={margin}/>
-        {meta.category[0]}
+        {meta.tags}
       </li>
       <li className="meta-item">
         <FontAwesomeIcon icon={faCoffee} style={margin}/>
-        {`${meta.time} min(s) read`}
+        {`${meta.readingTime} min(s) read`}
       </li>
       {/* October 4, 2020 International 2 min(s) read */}
     </ul>
