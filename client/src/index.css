@@ -48,8 +48,8 @@ body {
   text-align: center;
 }
 
-/* Post Style */
-.post {
+/* Blog Style */
+.blog {
   margin-bottom: 30px;
   padding: 0;
   border: 1px solid #e9e9e9;
@@ -57,18 +57,18 @@ body {
   max-width: 350px;
 }
 
-.post img {
+.blog img {
   width: 100%; 
   display:block; 
   height: auto;
   /* border: 1px solid red; */
 }
 
-.post .content {
+.blog .content {
   padding: 0 15px;
 }
 
-.post a {
+.blog a {
   color: #333;
   display: inline-block;
   font-size: 13px;
@@ -79,14 +79,14 @@ body {
   margin-bottom: 15px;
 }
 
-.post-title {
+.blog-title {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 0.6px;
   margin: 20px 0 12px 0;
 }
 
-.post-meta {
+.blog-meta {
   /* display: flex; */
   /* justify-content: flex-start; */
   
@@ -112,31 +112,31 @@ body {
   padding-left: 0;
 }
 
-.post p {
+.blog p {
   margin-bottom: 20px;
 }
 
-.post a {
+.blog a {
   text-decoration: none;
 }
 
-.post a:hover {
+.blog a:hover {
   color:  #13aff0;
 }
 
 /* Postsbar Style */
-.posts-sidebar {
+.blogs-sidebar {
   /* border: 1px solid red; */
   /* border-left: 1px solid #ddd; */
   /* padding-left: 35px; */
 }
 
-.col-posts-sidebar {
+.col-blogs-sidebar {
   border-left: 1px solid #ddd;
   padding-left: 35px;
 }
 
-.posts-sidebar input {
+.blogs-sidebar input {
   width: 100%;
   margin-bottom: 40px;
 
@@ -152,13 +152,13 @@ body {
   border-radius: 3px;
 }
 
-.posts-sidebar h4 {
+.blogs-sidebar h4 {
   color: inherit;
   font-size: 15px;
   font-weight: 400;
 }
 
-.posts-sidebar .list-group-item {
+.blogs-sidebar .list-group-item {
   background-color: #fff;
   color: inherit;
   font-weight: 200;

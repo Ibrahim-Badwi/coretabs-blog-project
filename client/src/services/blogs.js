@@ -8,11 +8,9 @@ const get = () => {
 };
 
 const getAll = () => {
+  // return axios.get(baseUrl);
   const request = axios.get(baseUrl);
-  return request.then(response => {
-    // console.log(response);
-    return response.data;
-  });
+  return request.then(response => response.data);
 };
 
 export default { get, getAll };
