@@ -4,11 +4,17 @@ const mongoose = require('mongoose');
 
 // data stored in the database is given a schema at the level of the application
 // schema tells Mongoose how the note objects are to be stored in the database
+// validating the format of the data before it is stored in the database
 const blogSchema = new mongoose.Schema({
   title: {
     type: String,
+    minlength: 15,
+    required: true
   },
-  content: String,
+  content: {
+    type: String,
+    required: true
+  },
   meta: Object,
   imgsrc: String,
 });
