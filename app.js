@@ -1,5 +1,7 @@
 /* The actual application */
+const config = require('./utils/config');
 const express = require('express');
+require('express-async-errors');
 const cors = require('cors');
 const dbSetup = require('./utils/dbService');
 const middleware = require('./utils/middleware');
