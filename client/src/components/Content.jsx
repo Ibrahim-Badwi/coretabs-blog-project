@@ -23,7 +23,6 @@ const Content = () => {
   };
 
   useEffect(hook, []);
-  console.log(blogs);
   return (
     <div className="container-lg mt-5">
       <Switch>
