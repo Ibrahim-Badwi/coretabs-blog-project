@@ -4,7 +4,8 @@
   "description": "simple blog with tags, search and comments.",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node index.js",
+    "start": "NODE_ENV=production node index.js",
+    "start:local": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js --ignore ./client/*",
     "lint": "eslint .",
     "build:ui": "rm -fr build && cd client/ && npm run build --prod && cp -r build ../",
